@@ -106,6 +106,7 @@ damaged_model = copy.deepcopy(model)
 with torch.no_grad():
     damaged_model.conv1.weight[:8] = 0
     damaged_model.conv1.bias[:8] = 0
+```
 观察现象：
 
 识别准确率显著下降，实验中测试准确率仅为91%
